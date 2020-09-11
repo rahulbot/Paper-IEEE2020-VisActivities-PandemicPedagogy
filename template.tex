@@ -93,7 +93,7 @@
 \authorfooter{
 %% insert punctuation at end of each item
 \item
- Rahul Bhargava is with the Northeastern School of Journalism. E-mail: r.bhargava@northeastern.edu.
+ Rahul Bhargava is an Assistant Professor with the Northeastern School of Journalism and Department of Art + Design. E-mail: r.bhargava@northeastern.edu.
 }
 
 %other entries to be set up for journal
@@ -101,8 +101,9 @@
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-%%\abstract{Duis autem vel eum iriure dolor in hendrerit in vulputate
-%%} % end of abstract
+\abstract{
+The pandemic has created significant teaching challenges for data visualization educators. Classroom-based hands-on activities don't readily translate into engaging online experiences. This paper lays out three guiding principles I used to make this transition - maintaining learning goals, embracing the affordances of available technology, and activating the learner’s physical setting as part of the activity. I present two activities that I adapted to work online as case studies in how those principles play out - building data sculptures and sketching visual word webs. The three principles, case studies, and reflections offer insights and lessons to other educators designing and leading virtual activities with data visualization learners.
+} % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
 %% please capitalize first letter and insert punctuation after last keyword
@@ -133,7 +134,6 @@
 %% It is disabled by the 'review' option or via the following command:
 % \nocopyrightspace
 
-
 \vgtcinsertpkg
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -151,9 +151,9 @@
 \maketitle
 
 %% \section{Introduction} %for journal use above \firstsection{..} instead
-Data visualization has become firmly established as a critical and increasingly mainstream communication technique for our data-centered times. It is being taught in multiple fields - from journalism\cite{gray_data_2012}, to undergraduate computer science education\cite{syeda_design_2020}, to business schools\cite{wolfe_teaching_2015} and more. In both \href{https://vgl.cs.usfca.edu/pdvw/2016/}{2016} and \href{https://vgl.cs.usfca.edu/pdvw/2017/}{2017} this conference hosted workshops on the "Pedagogy of Data Visualization".
+Data visualization has become firmly established as a critical and increasingly mainstream communication technique for our data-centered times. It is being taught in multiple fields - from journalism\cite{gray_data_2012}, to undergraduate computer science education\cite{syeda_design_2020}, to business schools\cite{wolfe_teaching_2015} and more. Teaching data visualization is firmly established as a field of study and scholarship; in both \href{https://vgl.cs.usfca.edu/pdvw/2016/}{2016} and \href{https://vgl.cs.usfca.edu/pdvw/2017/}{2017} the IEEE VIS conference hosted workshops on the “Pedagogy of Data Visualization”.
 
-In the midst of a global pandemic, how do we continue to deliver creative and high-quality learning experiences for data visualization online? This short paper introduces two case studies of how I have taken hands-on activities related to data visualization and brought them online. They demonstrate to me that when considering moving an activity online one should ask themselves questions such as:
+In the midst of a global pandemic, how do we continue to deliver creative and high-quality learning experiences for data visualization online? This short paper introduces two case studies of how I have taken hands-on activities related to data visualization and brought them online. Their adaptation was guided by three questions:
 \begin{enumerate}
   \itemsep0em 
   \item Can the activity be moved online without sacrificing learning goals and pedagogy?
@@ -165,14 +165,14 @@ I don’t consider these to be radically new questions in the world of online  t
 \section{Motivation}
 My approach to data visualization education is firmly rooted in principles of hands-on learning and constructionism\cite{dignazio_creative_2018}. I anchor my pedagogy in this central idea of Seymour Papert’s – that learning occurs best when people are designing and discussing objects for audiences that are meaningful to themselves or their peers\cite{papert_childrens_1994}. As businesses and campuses emptied and teaching moved online, I quickly began to reflect on what it meant to create constructionist experiences for data visualization learning in virtual settings.
 
-Our \href{https://datacultureproject.org}{Data Culture Project} already offers a  set of participatory, hands-on activities for learning various stages of the data visualization process. The dozen activities documented there function as a self-service curriculum online, used by tens of thousands across the globe to support learning in educational, non-profit, and business settings. 
+My Data Culture Project (\href{http://culture.databasic.io}{culture.databasic.io}), a collaboration with Catherine D’Ignazio of MIT, already offers a  set of participatory activities for learning various stages of the data visualization process. The dozen activities documented there function as a self-service curriculum online, used by tens of thousands across the globe to support learning in newsrooms, schools, non-profits, and businesses. 
 
-During the spring 2020 disruption I adapted and used two of the Data Culture Project activities in virtual classroom settings, as documented in the following sections. Each example pulls from my experiences this past spring taking my small undergraduate/graduate university “Data Storytelling Studio” course online due to the pandemic. The class included 18 students, meeting co-temporally in a Zoom room twice a week for roughly a third of the spring semester. Students came from various disciplines - business, education, public health, urban planning, engineering, computer science.
+During the spring 2020 disruption I adapted and used two of the Data Culture Project activities in virtual classroom settings, as documented in the following sections. Each example pulls from my experiences this past spring taking my undergraduate/graduate university “Data Storytelling Studio” course online due to the pandemic. The class included 18 students, meeting co-temporally in a Zoom room for 1.5 hours twice a week over roughly a third of the spring semester. Students came from various disciplines - business, education, public health, urban planning, engineering, computer science.
 
 \section{Case Study 1: Building Data Sculptures}
-The “Build a Data Sculpture” activity invites participants to build a physical representation of a data story using familiar craft materials within 10 minutes. In prior work I argue that this activity is particularly well-suited to environments that benefit from a low-tech and playful introduction to working with data \cite{bhargava_data_2017}. As part of a semester long course, I've previously expanded this to be a 2-week group project.
+My “Build a Data Sculpture” activity invites participants to build a physical representation of a data story using familiar craft materials within 10 minutes. In prior work I argue that this activity is particularly well-suited to environments that benefit from a low-tech and playful introduction to working with data \cite{bhargava_data_2017}. The primary learning goals include understanding physical variables, moving quickly from data to story, and interrogating the explanatory possibilities of a physical material.
 
-Rescheduling caused by the pandemic made that impossible. I ran through a few options for taking this online which considering the three guiding questions I opened with:
+As part of this semester long course I usually expand the activity to be a 2-week group project; with the rescheduling required due to class cancellations that become impossible. Guided by the 3 principles covered in the introduction, I ran through a few options for taking this activity online:
 \begin{enumerate}[(a)] % (a), (b), (c), ...
   \itemsep0em 
   \item Eliminate it from my syllabus
@@ -183,43 +183,64 @@ Rescheduling caused by the pandemic made that impossible. I ran through a few op
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.26]{figures/figure1.jpg}
-  \label{fig:data_sculpture_examples}
-  \caption{Data sculptures created by students.}
+  \includegraphics[scale=0.18]{figures/sculptures-in-class.jpg}
+  \label{fig:sculptures_in_class}
+  \setlength{\abovecaptionskip}{-7pt}
+  \caption{Data sculptures created by students during in-class sessions.}
 \end{figure}
 
-After weighing the various affordances, I decided to have them build small data sculptures individually with whatever they found around them (c). This maintained my learning goals and pedagogy, because it still offered them a chance to play with physical information encodings. I asked them to post photos of their projects to the class blog, in order to allow the creation process to avoid any technological intermediation but also support sharing and discussion.  To connect the assignment to their interests, I asked them to work with a data story they had already created in one of the two previous group projects they had worked on. I felt this would focus the activity on the material affordances and evocative power of the physical objects they use, rather than on the story-finding process. This approach also turned their physical constraints into a positive, because they each would have different materials around them and would likely produce a diversity of approaches and projects.
-
-The students built  data sculptures that showed far more creativity than when I run the activity in the standard way (see Fig. 1). One used the amount of salad toppings to indicate floral diversity in different parts of New York City. Another smudged a globe with dirty fingerprints to encode air pollution. A third built a model of a two-storey museum exhibit that portrayed accepted vs. denied US FOIA requests with a "tip of the iceberg" metaphor. As a whole, the sculptures captured each of Moere and Patel's "symbolic, iconic and indexical" taxonomy\cite{moere_physical_2009}. These results lead me to believe that this approach to taking the data sculptures activity online met my criteria for success quite well; my plan responded well enough to my three guiding questions to produce evocative projects that provoked discussion.
-
-\section{Case Study 2: Sketching a Visual Word Web}
-The "word webs" activity is used by artists to help move a group from an abstract concept to a larger set of words that describe it. In the data visualization process this can help transition from abstract concepts such as “power”, “justice”, or “community“ to more easily depicted terms such as "hammer", "scale", or "holding hands". As part of my Data Murals process I adapt this technique to create collaborative pictographic word webs, helping brainstorm a symbol language for a data story\cite{bhargava_data_2016}.
+After weighing the various options, I decided to have them build small data sculptures individually with whatever they found around them at home (option c). This option let me maintain my learning goals and pedagogy - they would still be quickly building a sculpture based on physical encodings with playful materials. To avoid technology getting in the way of the creative process, I asked them to post photos of their completed projects to the class blog (which would also support sharing and discussion). To connect the assignment to their interests, I asked them to work with a data story they had already created in one of the two previous group projects they had worked on. This approach also turned their physical constraints into a positive, because they each would have different materials around them and I hypothesized they would produce a diversity of approaches and projects.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.26]{figures/figure2.jpg}
-  \label{fig:full_word_web}
+  \includegraphics[scale=0.28]{figures/sculptures-at-home.jpg}
+  \label{fig:sculptures_at_home}
+  \setlength{\abovecaptionskip}{-7pt}
+  \caption{Data sculptures created by students attending class virtually from their own homes.}
+\end{figure}
+
+The students built  data sculptures that showed far more creativity than when I run the activity in the standard way. I typically provide a set of craft materials for the activity along with a single data handout. Projects produced in class with these materials and data often look similar to one-another or use obvious representations - smiling faces for happy or sad people, ice cream cones for ice cream (see Fig. 1). With students using datasets they already knew, and using materials from their homes, the projects varied far more widely (see Fig. 2). One used the amount of salad toppings to indicate floral diversity in different parts of New York City. Another smudged a globe with dirty fingerprints to encode air pollution. A third built a model of a two-storey museum exhibit that portrayed accepted vs. denied US FOIA requests with a “tip of the iceberg” metaphor. As a whole, the sculptures captured each of Moere and Patel's “symbolic, iconic and indexical” taxonomy\cite{moere_physical_2009}. Of course, this could also be attributable to the fact that they had more than 10 minutes to create the pieces - futher study and iteration would be required to understand this more thoroughly.. These results lead me to believe that this approach to taking the data sculptures activity online met my criteria for success quite well; my plan responded well enough to my three guiding questions to produce evocative projects that provoked discussion.
+
+\section{Case Study 2: Sketching a Visual Word Web}
+The “word webs” activity is used by artists to help move a group from an abstract concept to a larger set of words that describe it. In the data visualization process this can help transition from abstract concepts such as “power”, “justice”, or “community” to more easily depicted terms such as “hammer”, “scale”, or “holding hands”. As part of my Data Murals process I adapted this technique to create collaborative pictographic word webs, helping brainstorm a symbol language for a data story\cite{bhargava_data_2016}. The primary learning goals of this activity include understanding when getting off-screen can help in a data project, practicing sketching to develop a visual vocabulary, and collaborating to discover a novel or shared symbology for depicting data.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.29]{figures/word-web-paper.jpg}
+  \label{fig:word_web_paper}
+  \setlength{\abovecaptionskip}{-1pt}
   \caption{A pictographic word web created in person to tease out a symbolic language for “social exclusion” (in Brazilian Portuguese).}
 \end{figure}
 
-The activity begins with a large piece of paper with the central word of the story written on it. Each learner brainstorms connected words, in silence, and writes them on the paper, connecting each new word to the word that inspired it with a line. After about 5 minutes we hand out post-it notes and ask the participants to look for ideas that are easy to illustrate, draw each one on an individual sticky note, and stick it near the word that it illustrates (see an example in Fig. 2).
+When meeting in the same place, the activity begins with a large piece of paper with the central word of the story written on it. Each learner brainstorms connected words, in silence, and writes them on the paper, connecting each new word to the word that inspired it with a line. After about 5 minutes we hand out post-it notes and ask the participants to look for ideas that are easy to illustrate, draw each one on an individual sticky note, and stick it near the word that it illustrates (see an example in Fig. 3).
 
-Rethinking this activity for a virtual setting, I found some tradeoffs needed to be made. I could support the participatory nature of it by using the virtual whiteboard feature built into our Zoom meeting. I found most students familiar with the technology from other classes they were in that had already used it. It allowed for collaborative writing to happen with real-time synchronization, so everyone could see what the other students were writing. Unfortunately the joy of moving around a large paper, leaning in and stepping back, didn't feel like it would translate well to this technology. The serendipity of moving around the table lends a lot to this activity, so I was unsure of success.
-
-I found that the first phase of word generation worked well, but the sketching process fell flat. The group of students created a word web that I qualitatively assessed to be similar in variety of scope to those made in physical settings (see Fig. 3).  However, when we tried to shift into the sketching portion of the activity it fell apart. Students found it hard to sketch with the virtual tools provided, expressing frustration with pixelated drawings “not coming out the way I wanted”, wondering “where should I draw?”, and laughing at what they had drawn. As those frustrations mounted I decided to end the activity early. 
+Rethinking this activity for a virtual setting, I found some trade-offs needed to be made. In order to keep my learning goal related to collaboration I found myself forced to give up the learning goal related to getting off-screen. I couldn't come up with a low-friction way to collaboratively sketch on an offline canvas while meeting virtually. I had the Zoom collaboration software at my disposal, so I decided to use the whiteboard feature built in. I found most students familiar with the technology from other classes they were in that had already used it so I expected this would reduce potential technological hiccups. The Zoom whiteboard allows for collaborative writing to happen with real-time synchronization, so each person could see what the other students were writing. Reflecting on the third guiding principle, I tried to imagine ways to use the student's space as a positive. Some had external large screens, one had a projector, and a handful had tablets with pens or touchscreens. I hypothesized that the tablet format might help, so I asked those who had it to join on their tablets for that session of class. Unfortunately the joy of moving around a large paper, leaning in and stepping back, didn't feel like it would translate well to this technology. The serendipity of moving around the table lends a lot to this activity, so I was worried about how it would go.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.26]{figures/figure3.jpg}
-  \label{fig:online_word_web}
+  \includegraphics[scale=0.28]{figures/word-web-online.jpg}
+  \label{fig:word_web_online}
+  \setlength{\abovecaptionskip}{-7pt}
   \caption{A collaborative word web created in a Zoom online class using the built-in whiteboard. The central word was “capacity”.}
 \end{figure}
 
-In reflection, I attribute this to the affordances of the particular technology I chose - it both supported and hindered the activity. It didn't allow for detailed sketching. That isn’t a criticism of the tool so much as a recognition of its intent. Sketching in a virtual environment, even with the goal of stick-figure like cartoon drawings, requires a different UI design and I, as the teacher, shouldn’t have assumed Zoom’s whiteboard would accommodate both interaction needs. In addition, I ignored the third of my guiding questions - I didn't turn the student's physical constraints into a positive. Another approach could be to have students draw sketches on sticky notes and post photos to an image board (using Pinterest or some other similar tool). On the whole this activity presented more challenges to being run virtually while still fully addressing my three guiding questions.
+I found that the first phase of word generation worked well, but the sketching process fell flat. The group of students created a word web that I qualitatively assessed to be similar in variety of scope to those made in physical settings (see Fig. 4).  However, when we tried to shift into the sketching portion of the activity it fell apart. Students found it hard to sketch with the virtual tools provided, expressing frustration with pixelated drawings “not coming out the way I wanted”, wondering “where should I draw?”, and laughing at what they had drawn. As those frustrations mounted I decided to end the activity early. 
 
+Reflecting on the choices I made, I think I would try this again if I invested more time in investigating and testing other whiteboard technologies. Over the course of the semester I found my students very quick to sign on to a new website and learn how it worked; I have no doubt they would figure out a non-Zoom whiteboard as needed. 
+
+In reflection, I attribute this to the affordances of the particular technology I chose - it both supported and hindered the activity. It didn't allow for detailed sketching. That isn’t a criticism of the tool so much as a recognition of its intent. Sketching in a virtual environment, even with the goal of stick-figure like cartoon drawings, requires a different UI design and I, as the teacher, shouldn’t have assumed Zoom’s whiteboard would accommodate both interaction needs. Some criteria I plan to use when selecting a new whiteboard platform for this activity include:
+
+\begin{itemize}
+  \itemsep0em 
+  \item Can you see other user pens on the virtual canvas? I believe this would help avoid collisions on the whiteboard, helping students not write on top of each other.
+  \item Can you zoom in and out easily? This would assist in making a sketch of a word at high zoom, then zooming out and panning to see the entire web of words and illustrations.
+  \item Do students have tablets available? This makes sketching far simpler than working with a mouse.
+\end{itemize}
+
+In addition, I dismissed the third of my guiding questions too quickly - I didn't turn the student's physical constraints into a positive. Another approach could be to have students draw sketches on sticky notes and post photos to an image board (using Pinterest or some other similar tool). On the whole this activity presented more challenges to being run virtually while still fully addressing my three guiding questions.
 
 \section{Conclusion}
-The coronavirus pandemic seems certain to snarl fall teaching plans, requiring many data visualization learning environments to stay online. We hope these two examples of translating hands-on participatory data visualization learning activities to the virtual setting are valuable to workshop participants. Intentionally designing virtual participatory data visualization learning activities requires us as educators to constantly revisit our guiding principles. I have shared an initial three in this article and discussed how they informed my process - retaining pedagogy and learning goals, carefully considering technological affordances, and taking advantage of student's physical constraints.
+The coronavirus pandemic has upset fall teaching plans, requiring many data visualization learning settings to stay online. Intentionally designing virtual participatory data visualization learning activities requires us as educators to constantly revisit our guiding principles. I have three such principles in this article and discussed how they informed my process - retaining pedagogy and learning goals, carefully considering technological possibilities and limitations, and taking advantage of student's physical constraints. These two examples of translating hands-on participatory data visualization learning activities to be virtual based on those three principles offer useful insights to other activity designers. Public activity guides for both sessions, including early advice for running them online, are attached to this paper as supplemental materials.
 
 %% if specified like this the section will be committed in review mode
 \acknowledgments{
